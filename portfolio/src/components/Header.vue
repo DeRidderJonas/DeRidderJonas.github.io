@@ -8,7 +8,7 @@
     </header>
 </template>
 
-<style >
+<style scoped>
     header{
         width: auto;
     }
