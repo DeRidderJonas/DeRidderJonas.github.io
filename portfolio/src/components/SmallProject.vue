@@ -1,5 +1,5 @@
 <template>
-    <div class="full-project">
+    <div class="full-project actual-project">
         <h2>{{Project.name}}</h2>
         <div class="info">
             <PortalProj v-if="Project.includePortalProj"/>

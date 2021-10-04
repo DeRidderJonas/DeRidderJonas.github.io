@@ -80,6 +80,6 @@ ul{
 
 li{
   list-style-type: none;
-  /* margin: 1px; */
+  margin: 5px;
 }
 </style>
