@@ -1,10 +1,10 @@
 <template>
-    <div class="full-project actual-project">
+    <div class="small-project full-project actual-project">
         <h2>{{Project.name}}</h2>
         <div class="info">
-            <div v-if="Project.imgAlt" v-html="Project.imgAlt">
-			<img v-else :src="'assets/img/' + Project.img">
-            <div class="info-text">
+            <div v-if="Project.imgAlt" v-html="Project.imgAlt"></div>
+			<img v-else :src="'assets/img/' + Project.img" class="projectImg">
+            <div class="info-text info-text-small">
                 <p v-html="Project.info"></p>
                 <a :href="Project.link" target="_blank">{{Project.linkText}}</a>
             </div>
@@ -13,11 +13,10 @@
 </template>
 
 <script>
-import PortalProj from '@/components/PortalProject.vue';
+// import PortalProj from '@/components/PortalProject.vue';
 
 export default {
     components:{
-        PortalProj
     },
     props:{
         Project: Object
@@ -25,5 +24,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+    .small-project{
+        height: 400px;
+    }
+    .info-text-small{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img{
+        max-height: 260px;
+        width: auto;
+    }
 </style>
