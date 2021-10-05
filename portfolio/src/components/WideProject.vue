@@ -7,7 +7,7 @@
                 <img :src="'assets/img/' + Project.img"/>
                 <div class="info-text">
                     <p v-html="Project.info"></p>
-                    <a :href="Project.link" target="_blank">Link to project</a>
+                    <a :href="Project.link" target="_blank">{{Project.linkText}}</a>
                 </div>
             </div>
         </div>

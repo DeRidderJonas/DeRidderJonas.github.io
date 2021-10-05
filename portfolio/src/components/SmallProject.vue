@@ -2,11 +2,11 @@
     <div class="full-project actual-project">
         <h2>{{Project.name}}</h2>
         <div class="info">
-            <PortalProj v-if="Project.includePortalProj"/>
-            <img v-else :src="'assets/img/' + Project.img">
+            <div v-if="Project.imgAlt" v-html="Project.imgAlt">
+			<img v-else :src="'assets/img/' + Project.img">
             <div class="info-text">
                 <p v-html="Project.info"></p>
-                <a :href="Project.link" target="_blank">Link to project</a>
+                <a :href="Project.link" target="_blank">{{Project.linkText}}</a>
             </div>
         </div>
     </div>
