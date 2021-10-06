@@ -36,7 +36,9 @@ export default {
 		{
           project:{
       name: "Super Paper Mario (GAME)",
-      imgAlt: `<iframe title="vimeo-player" src="https://player.vimeo.com/video/434715976?h=033444bd85" width="450" height="320" frameborder="0" allowfullscreen></iframe>`,
+      img: "SPM.png",
+      imgAlt: `<iframe title="vimeo-player" src="https://player.vimeo.com/video/434715976?h=033444bd85"
+        width="450" height="320" frameborder="0" allowfullscreen></iframe>`,
 			link: "https://www.digitalartsandentertainment.be/article/437/Programming+2%3A+2020+post+mortem",
       linkText: "Link to featured project on DAE website",
       info: "This game was made for a module called: Programming 2. <br/><br/>In it, I remade a part of Super Paper Mario. <br/><br/>Made in C++ and SDL2."
@@ -53,8 +55,11 @@ export default {
         },
 		{
 			project:{
-				name: "Science Center (LEVEL)",
-				imgAlt: `<iframe width="450" height="320" src="https://www.youtube.com/embed/cF5uhhTUBRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+        name: "Science Center (LEVEL)",
+        img: "ScienceCenter.png",
+        imgAlt: `<iframe width="450" height="320" src="https://www.youtube.com/embed/cF5uhhTUBRA"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+          encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
 				link: "https://youtu.be/9KOyP-OqGcs",
 				linkText: "Link to level walktrough",
 				info: "This level was made for a module called: Environments. <br/><br/>Made in Unreal Engine 4.26."
@@ -62,8 +67,20 @@ export default {
 		},
 		{
 			project:{
-				name: "City Scene - Bangkok (LEVEL)",
-				imgAlt: `<div class="sketchfab-embed-wrapper"> <iframe title="De Ridder Jonas - City Scene Bangkok" width="450" height="280" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/db0ff4153f074c9396edf2c5b434e1b9/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/de-ridder-jonas-city-scene-bangkok-db0ff4153f074c9396edf2c5b434e1b9?utm_medium=embed&utm_campaign=share-popup&utm_content=db0ff4153f074c9396edf2c5b434e1b9" target="_blank" style="font-weight: bold; color: #1CAAD9;"> De Ridder Jonas - City Scene Bangkok </a> by <a href="https://sketchfab.com/JonasDeRidder?utm_medium=embed&utm_campaign=share-popup&utm_content=db0ff4153f074c9396edf2c5b434e1b9" target="_blank" style="font-weight: bold; color: #1CAAD9;"> JonasDeRidder </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=db0ff4153f074c9396edf2c5b434e1b9" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>`,
+        name: "City Scene - Bangkok (LEVEL)",
+        img: "CitySceneBangkok.png",
+        imgAlt: `<div class="sketchfab-embed-wrapper">
+          <iframe title="De Ridder Jonas - City Scene Bangkok" width="450" height="280" frameborder="0"
+          allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay;
+          fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+          web-share src="https://sketchfab.com/models/db0ff4153f074c9396edf2c5b434e1b9/embed">
+          </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+          <a href="https://sketchfab.com/3d-models/de-ridder-jonas-city-scene-bangkok-db0ff4153f074c9396edf2c5b434e1b9?utm_medium=embed&utm_campaign=share-popup&utm_content=db0ff4153f074c9396edf2c5b434e1b9"
+          target="_blank" style="font-weight: bold; color: #1CAAD9;"> De Ridder Jonas - City Scene Bangkok </a> by <a
+          href="https://sketchfab.com/JonasDeRidder?utm_medium=embed&utm_campaign=share-popup&utm_content=db0ff4153f074c9396edf2c5b434e1b9"
+          target="_blank" style="font-weight: bold; color: #1CAAD9;"> JonasDeRidder </a> on <a
+          href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=db0ff4153f074c9396edf2c5b434e1b9"
+          target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>`,
 				link: "https://skfb.ly/6SZA7",
 				linkText: "Link to sketchfab",
 				info: "This city scene was made for a module called: 3D 1. <br/><br/>Made in 3Ds Max."
@@ -134,5 +151,11 @@ html{
 }
 .wide-project{
   margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .projectLi{
+    width: 90%;
+  }
 }
 </style>

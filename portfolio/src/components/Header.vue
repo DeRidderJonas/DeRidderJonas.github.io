@@ -8,17 +8,17 @@
             <ul class="links">
                 <li>
                     <a href="https://www.linkedin.com/in/jonasderidder64/" target="_blank">
-                        <img src="assets/img/LI-In-Bug.png" alt="LinkedIn" style="height: 25px; width: auto;">
+                        <img src="assets/img/LI-In-Bug.png" alt="LinkedIn">
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/DeRidderJonas" target="_blank">
-                        <img src="assets/img/github.png" alt="Github" style="height: 25px; width: auto;">
+                        <img src="assets/img/github.png" alt="Github">
                     </a>
                 </li>
                 <li>
                     <a href="mailto:jonasderidder64@gmail.com">
-                        <img src="assets/img/mail.png" alt="Mail to" style="height: 25px; width: auto;">
+                        <img src="assets/img/mail.png" alt="Mail to">
                     </a>
                 </li>
             </ul>
@@ -58,6 +58,8 @@
 
     img{
         border-radius: 2px;
+        height: 25px;
+        width: auto;
     }
 
     h1{
@@ -66,10 +68,17 @@
 
     h3{
         font-size: 2rem;
+        margin: 5px;
     }
 
     .studyInfo{
         font-size: 0.9rem;
         color: #3e73b3;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .links{
+            width: 30%;
+        }
     }
 </style>

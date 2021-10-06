@@ -2,8 +2,9 @@
     <div class="small-project full-project actual-project">
         <h2>{{Project.name}}</h2>
         <div class="info">
-            <div v-if="Project.imgAlt" v-html="Project.imgAlt"></div>
+            <div v-if="Project.imgAlt" v-html="Project.imgAlt" class="projectImg-alt"></div>
 			<img v-else :src="'assets/img/' + Project.img" class="projectImg">
+            <img :src="'assets/img/' + Project.img" class="projectImg projectImg-backup" :style="[Project.imgAlt ? {} : {'display':'none'}]">
             <div class="info-text info-text-small">
                 <p v-html="Project.info"></p>
                 <a :href="Project.link" target="_blank">{{Project.linkText}}</a>
@@ -13,8 +14,6 @@
 </template>
 
 <script>
-// import PortalProj from '@/components/PortalProject.vue';
-
 export default {
     components:{
     },
@@ -37,5 +36,28 @@ export default {
     img{
         max-height: 260px;
         width: auto;
+    }
+
+    .projectImg-backup{
+        display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .small-project{
+            height: auto;
+        }
+
+        img{
+            width: 95%;
+            height: auto;
+        }
+
+        .projectImg-alt{
+            display: none;
+        }
+
+        .projectImg-backup{
+            display: inline;
+        }
     }
 </style>
