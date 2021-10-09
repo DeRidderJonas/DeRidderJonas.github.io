@@ -68,7 +68,7 @@ export default {
 		{
 			project:{
         name: "City Scene - Bangkok (LEVEL)",
-        img: "CitySceneBangkok.png",
+        img: "cityScene.png",
         imgAlt: `<div class="sketchfab-embed-wrapper">
           <iframe title="De Ridder Jonas - City Scene Bangkok" width="450" height="280" frameborder="0"
           allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay;
