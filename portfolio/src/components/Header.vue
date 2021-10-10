@@ -1,19 +1,24 @@
 <template>
   <header>
     <h1>Jonas De Ridder</h1>
-    <h3>
-      Game Developer
-      <span class="studyInfo">@Digital Arts And Entertainment Howest (2019-Present)</span>
+    <h3 style="margin-bottom: 25px">
+      Game Developer<br class="extraBr"/>
+      <span class="studyInfo">AI and Gameplay Programmer</span>
     </h3>
     <h3>
       Software and System Engineer
-      <span class="studyInfo">@Howest (2016-Present)</span>
     </h3>
     <div class="profile-info">
       <p class="location">@Belgium</p>
-      <ul class="navigation">
+      <ul id="nav">
         <li>
-            
+          <router-link to="/">Projects</router-link>
+        </li>
+        <li>
+          <router-link to="/OtherProjects">Non-coding projects</router-link>
+        </li>
+        <li>
+          <router-link to="/about">About Me</router-link>
         </li>
       </ul>
       <ul class="links">
@@ -52,7 +57,8 @@
   }
 
   .location {
-    margin-left: 4%;
+    margin-left: 5%;
+    width: 8%;
     color: #3e73b3;
   }
 
@@ -85,11 +91,48 @@
   .studyInfo {
     font-size: 0.9rem;
     color: #3e73b3;
+    margin-left: 5px;
+  }
+
+  .extraBr {
+      display: none;
   }
 
   @media screen and (max-width: 1000px) {
     .links {
-      width: 30%;
+      width: 90%;
+      margin-top: 35px;
     }
+
+    .profile-info {
+        flex-direction: column;
+    }
+
+    #nav {
+        width: 90%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .extraBr {
+        display: inline;
+    }
+
+    .location {
+        display: none;
+    }
+  }
+
+  #nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 84%;
+    margin: auto;
+  }
+
+  #nav a {
+    font-weight: bold;
+    color: white;
   }
 </style>

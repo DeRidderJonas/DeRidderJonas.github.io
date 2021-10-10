@@ -26,7 +26,7 @@ export default {
 <style scoped>
     img{
         max-height: 260px;
-        width: auto;
+        max-width: 458px;
         border-radius: 15px;
     }
 
