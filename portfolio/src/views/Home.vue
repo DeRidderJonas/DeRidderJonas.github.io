@@ -35,7 +35,8 @@ import SmallProject from "@/components/SmallProject.vue";
           {
             project: {
               name: "WhatToDoWithYou",
-              img: "WhatToDoWithYouGamePlay.png",
+              details: "/detail/whattodowithyou",
+              img: "wtdwy0.png",
               link: "https://yoranfory.itch.io/whattodowithyou",
               linkText: "Link to itch.io",
               info:

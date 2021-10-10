@@ -1,6 +1,15 @@
 <template>
   <div class="small-project full-project actual-project">
-    <h2>{{Project.name}}</h2>
+    <img
+      src="assets/img/GroupProjectSignature.png"
+      alt="Group Project"
+      v-if="Project.groupProject"
+      class="GPSig"
+    />
+    <h2>
+      <router-link v-if="Project.details" :to="Project.details">{{Project.name}} -></router-link>
+      <span v-else>{{Project.name}}</span>
+    </h2>
     <div class="info">
       <div class="imageContainer">
         <pauseableGif v-if="Project.GifInfo" :GifInfo="Project.GifInfo" />
@@ -85,6 +94,14 @@
     margin-bottom: auto;
   }
 
+  h2 a {
+    color: #172f47;
+  }
+
+  a {
+    color: #70b4b1;
+  }
+
   @media screen and (max-width: 1000px) {
     .small-project {
       height: auto;
@@ -104,9 +121,9 @@
     }
 
     .logoContainer {
-        max-height: 40px;
-        margin-left: auto;
-        margin-right: auto;
+      max-height: 40px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 </style>

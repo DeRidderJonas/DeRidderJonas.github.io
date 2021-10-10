@@ -24,17 +24,17 @@
       <ul class="links">
         <li>
           <a href="https://www.linkedin.com/in/jonasderidder64/" target="_blank">
-            <img src="assets/img/LI-In-Bug.png" alt="LinkedIn" />
+            <img src="@/assets/img/LI-In-Bug.png" alt="LinkedIn" />
           </a>
         </li>
         <li>
           <a href="https://github.com/DeRidderJonas" target="_blank">
-            <img src="assets/img/github.png" alt="Github" />
+            <img src="@/assets/img/github.png" alt="Github" />
           </a>
         </li>
         <li>
           <a href="mailto:jonasderidder64@gmail.com">
-            <img src="assets/img/mail.png" alt="Mail to" />
+            <img src="@/assets/img/mail.png" alt="Mail to" />
           </a>
         </li>
       </ul>
@@ -134,5 +134,9 @@
   #nav a {
     font-weight: bold;
     color: white;
+  }
+
+  #nav a.router-link-exact-active {
+    color: #3e73b3;
   }
 </style>

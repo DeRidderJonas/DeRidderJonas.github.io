@@ -53,7 +53,7 @@
   }
 
   .actual-project {
-    padding: 5px;
+    /* padding: 5px; */
   }
 
   .info {
@@ -77,6 +77,7 @@
 
   h2 {
     text-decoration: underline;
+    padding-top: 15px;
   }
 
   .year {
