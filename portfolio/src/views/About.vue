@@ -1,10 +1,22 @@
 <template>
   <div class="about">
-    <div class="info">
-      <p>I've been writing code since <span class="bold">2016</span>. My first bachelor's degree was in Applied Computer Science, I majored as a <span class="bold">Software and System Engineer</span>. There I learned coding as well as Networking, Operating Systems, Databases, Web Development...</p>
-      <p>After that degree, I wanted to keep learning so I went for a second Bachelor's degree in <span class="bold">Digital Arts and Entertainment</span> (DAE) as a Game Developer. During my time at DAE, I've come to realise I love making NPCs do things, see them mess up completely and ultimatly do what they're actually supposed to do... That's why I prefer <span class="bold">Gameplay Programming</span> and <span class="bold">AI</span> over most other branches in the gaming industry.</p>
+    <div class="persona">
+      <div class="info">
+        <p>
+          I've been writing code since
+          <span class="bold">2016</span>. My first bachelor's degree was in Applied Computer Science, I majored as a
+          <span class="bold">Software and System Engineer</span>. There I learned coding as well as Networking, Operating Systems, Databases, Web Development...
+        </p>
+        <p>
+          After that degree, I wanted to keep learning so I went for a second Bachelor's degree in
+          <span class="bold">Digital Arts and Entertainment</span> (DAE) as a Game Developer. During my time at DAE, I've come to realise I love making NPCs do things, see them mess up completely and ultimatly do what they're actually supposed to do... That's why I prefer
+          <span class="bold">Gameplay Programming</span> and
+          <span class="bold">AI</span> over most other branches in the gaming industry.
+        </p>
+      </div>
+      <img src="assets/img/Profile.jpg" alt="Profile" class="profile" />
     </div>
-    <img src="assets/img/Profile.jpg" alt="Profile" class="profile" />
+    <iframe src="assets/JonasDeRidder_CV.pdf" frameborder="0" width="80%" height="750px" class="cv"></iframe>
   </div>
 </template>
 
@@ -14,8 +26,16 @@
     width: 90%;
     margin: auto;
     border-radius: 15px;
+    padding: 15px;
+  }
+
+  .persona {
     display: flex;
     align-items: center;
+  }
+
+  .cv {
+    margin-top: 30px;
   }
 
   .info {
@@ -33,7 +53,7 @@
     margin-right: 2%;
   }
 
-  .bold{
+  .bold {
     font-weight: bold;
   }
 </style>
