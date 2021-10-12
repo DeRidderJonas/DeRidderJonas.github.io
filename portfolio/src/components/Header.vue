@@ -12,13 +12,13 @@
       <p class="location">@Belgium</p>
       <ul id="nav">
         <li>
-          <router-link to="./">Projects</router-link>
+          <router-link to="/">Projects</router-link>
         </li>
         <li>
-          <router-link to="./OtherProjects">Non-coding projects</router-link>
+          <router-link to="/OtherProjects">Non-coding projects</router-link>
         </li>
         <li>
-          <router-link to="./about">About Me</router-link>
+          <router-link to="/about">About Me</router-link>
         </li>
       </ul>
       <ul class="links">
